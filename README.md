@@ -12,8 +12,8 @@ This could be used to play with frontend similar to a repl but also an interesti
 * `React`
 * `CodeMirror`
 
-
-### In the project directory, you can run:
+### git clone project
+### cd into project directory, you can run:
 ### `npm start`
 
 ## Icebox-
