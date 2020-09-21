@@ -1,7 +1,3 @@
-.App {
-  
-}
-
 .top-pane {
   background-color: #181c2a;
   color: #dda50c;
@@ -18,6 +14,17 @@
   flex-grow: 1;
   flex-basis: 0;
   padding: .5rem;
+  transform: ease 0.5s;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+  /* display: none; */
+}
+
+.editor-container.collapsed .code-mirror-wrapper{
+  
+  display: none;
 }
 
 .editor-title {
