@@ -14,19 +14,27 @@
   flex-grow: 1;
   flex-basis: 0;
   padding: .5rem;
-  transform: ease 0.5s;
+  transition: ease 0.2s;
 }
 
 .editor-container.collapsed {
   flex-grow: 0;
-  /* display: none; */
+  background-color: #0f111a;
+  border-radius: .5rem;
+}
+
+.editor-container.collapsed .editor-title{
+  flex-direction: column;
 }
 
 .editor-container.collapsed .code-mirror-wrapper{
-  
   display: none;
+  overflow: hidden !important;
 }
 
+.editor-container.collapsed:hover {
+  background-color: #212533;
+}
 .editor-title {
   display: flex;
   justify-content: space-between;
@@ -37,6 +45,7 @@
 .collapse-expand-btn {
   text-decoration:none;
   text-align: center;
+  width: 2rem;
   font-weight: 700;
   border-radius: 1.2rem;
   background-color: #22283f;
